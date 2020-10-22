@@ -1,0 +1,147 @@
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+
+.navbar .navbar-brand > .navbar-item, .navbar .navbar-brand .navbar-link {
+    display: inline-block;
+}
+
+.body, .landingpage {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+ 
+  .wrapper {
+    position: relative;
+    height:110vh;
+    overflow:hidden;
+    margin-top: -49px;
+  }
+  .masthead {
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+  .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+  }
+
+  .headline {
+    font:900 35pt/35pt sans-serif;
+    text-transform:uppercase;
+    color: #F1C40F;
+    letter-spacing:-.55pt;
+    
+    opacity:0;
+    -webkit-backface-visibility: hidden;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-duration: .75s;
+    animation-name: fadeInDown;
+  }
+  .titles {
+    margin-top: -20px;
+    font:10 11pt/11pt sans-serif;
+    display:inline-block;
+    letter-spacing:1pt;
+    
+    opacity:0;
+    -webkit-backface-visibility: hidden;
+    animation-delay: 1.55s;
+    animation-fill-mode: both;
+    animation-duration: 1.25s;
+    animation-name: fadeInDown;
+  }
+  
+  
+  .wrapper:before,.wrapper:after,
+.masthead:before,.masthead:after {
+  content:'';
+  display:block;
+  position:absolute;
+  width:500px;
+  height:100%;
+  background:#F1C40F;
+  left:0;
+  transform:translateX(-110%) skew(3deg);
+
+  animation-fill-mode: both;
+  animation-duration: 3s;
+  animation-name: swipeLeft;
+}
+.masthead:before {
+  width:150px;
+  animation-delay:.3s;
+}
+.masthead:after {
+  opacity:.3;
+  animation-delay:.5s;
+  background:#aef;
+}
+.wrapper:before {
+  opacity:.4;
+  animation-delay:.2s;
+  background:#aef;
+  width:100px;
+}
+.wrapper:after {
+  opacity:.8;
+  animation-delay:0;
+  background:#FADBD8;
+  width:250px;
+  animation-name: swipeLeft;
+}
+  
+  
+  
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity:0;
+      transform:translateY(-100%);
+    }
+    100% {
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+  
+  @keyframes swipeLeft {
+    0% {
+      left:0;
+    }
+    100% {
+      left:110%;
+      transform:translateX(110%) skew(3deg);
+    }
+  }
+  @keyframes swipeRight {
+    0% {
+      left:110%;
+      transform:translateX(110%) skew(-3deg);
+    }
+    100% {
+      left:0%;
+      transform:translateX(-110%) skew(-3deg);
+    }
+  }
+
+  .hero{
+      background-color: black;
+  }
+
+  hr {
+    height: 1px;
+    width: 85%;
+    color: #F1C40F;
+    background-color: #F1C40F;
+}
