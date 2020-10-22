@@ -29,3 +29,16 @@
 .tile {
     text-align: center;
 }
+ 
+.hr {
+    margin-top: 135px;
+    height: 1px;
+    color: #F1C40F;
+    background-color: #F1C40F;
+    
+}
+
+.project {
+    text-align: center;
+    margin-top: 135px;
+}
