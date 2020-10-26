@@ -2,7 +2,8 @@ import React from 'react';
 import dinner from '../Images/dinner.PNG';
 import tracker from '../Images/tracker.demo.gif'
 import '../styles/portfolio.css';
-import amplifi from '../Images/amplifi.PNG'
+import amplifi from '../Images/amplifi.PNG';
+import workoutTracker from '../Images/workoutTracker.gif';
 
 const styles = {
     container: {
@@ -35,8 +36,7 @@ const styles = {
     },
 
     hr2: {
-        marginTop: "135px",
-        width: "100%"
+        marginTop: "135px"
     },
     h2: {
         fontWeight: "bold",
@@ -56,16 +56,16 @@ function Portfolio() {
                 </div>
                 <div className="columns" style={styles.columns}>
                     <div className="column">
-                        <div class="image-box">
-                            <img src={dinner} alt="Unsplashed Random" width="440" height="448" />
+                        <div class="image-box is-one-fifth">
+                            <img src={dinner} alt="Unsplashed Random"/>
                         </div>
                     </div>
-                    <div className="column" style={styles.hr2}><hr />
+                    <div className="column is-three-fifth" style={styles.hr2}><hr />
                     </div>
-                    <div className="column is-one-fifth project">
+                    <div className="column project">
                         <h2 style={styles.h2}>What's for Dinner?</h2>
                         <ul>
-                            <li>React.js</li>
+                        <li><a href="https://github.com/sarinaburch/Ampli-FI" target="blank">View GitHub Repository | </a><a href="https://amplifiyourlife.herokuapp.com/" target="blank">View Application</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +73,6 @@ function Portfolio() {
                     <div className="column project">
                         <h2 style={styles.h2}>Ampli-FI</h2>
                         <ul>
-                            <li>React.js</li>
                             <li><a href="https://github.com/sarinaburch/Ampli-FI" target="blank">View GitHub Repository | </a><a href="https://amplifiyourlife.herokuapp.com/" target="blank">View Application</a></li>
                         </ul>
                     </div>
@@ -81,19 +80,19 @@ function Portfolio() {
                     </div>
                     <div className="column is-one=-fifth">
                         <div class="image-box">
-                            <img src={amplifi} alt="Unsplashed Random" width="540" height="548" />
+                            <img src={amplifi} alt="Unsplashed Random" />
                         </div>
                     </div>
                 </div>
                 <div className="columns" style={styles.columns}>
                     <div className="column">
                         <div class="image-box">
-                            <img src={tracker} alt="Unsplashed Random" width="440" height="448" />
+                            <img src={tracker} alt="Unsplashed Random" />
                         </div>
                     </div>
                     <div className="column" style={styles.hr2}><hr />
                     </div>
-                    <div className="column is-one-fifth project">
+                    <div className="column project">
                         <h2 style={styles.h2}>Employee Tracker</h2>
                         <ul>
                             <li><a href="https://github.com/sarinaburch/employee-tracker">View GitHub Repository</a></li>
@@ -101,17 +100,17 @@ function Portfolio() {
                     </div>
                 </div>
                 <div className="columns" style={styles.columns}>
-                    <div className="column is-one-fifth project">
-                        <h2 style={styles.h2}>Ampli-FI</h2>
+                    <div className="column project">
+                        <h2 style={styles.h2}>Workout Tracker</h2>
                         <ul>
-                            <li>React.js</li>
+                        <li><a href="https://github.com/sarinaburch/employee-tracker">View GitHub Repository | </a><a href="https://amplifiyourlife.herokuapp.com/" target="blank">View Application</a></li>
                         </ul>
                     </div>
                     <div className="column is-three-fifth" style={styles.hr2}><hr />
                     </div>
                     <div className="column is-one=-fifth">
                         <div class="image-box">
-                            <img src={amplifi} alt="Unsplashed Random" width="540" height="548" />
+                            <img src={workoutTracker} alt="Unsplashed Random" />
                         </div>
                     </div>
                 </div>

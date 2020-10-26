@@ -51,9 +51,9 @@
   .titles {
     margin-top: -20px;
     font:10 11pt/11pt sans-serif;
-    display:inline-block;
-    letter-spacing:1pt;
+    letter-spacing: -.55pt;
     
+
     opacity:0;
     -webkit-backface-visibility: hidden;
     animation-delay: 1.55s;
@@ -97,7 +97,7 @@
   opacity:.8;
   animation-delay:0;
   background:#FADBD8;
-  width:250px;
+  
   animation-name: swipeLeft;
 }
   
@@ -135,11 +135,12 @@
     }
   }
 
-  .hero{
+  .hero {
       background-color: black;
+      text-align: center;
   }
 
-  hr {
+  .hr {
     height: 1px;
     width: 85%;
     color: #F1C40F;

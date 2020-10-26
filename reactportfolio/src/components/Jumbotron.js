@@ -24,22 +24,19 @@ function Jumbotron() {
                             Sarina Burch
                         </h1>
                         <h3 className="titles" style={styles.h3}>
-                            Web Developer
+                            Full Stack Web Developer
                         </h3>
-                        <div class="tabs is-centered titles">
-                           
-                    <ul>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="https://bulma.io">About Me</a></li>
-                        <li><a href="https://bulma.io">My Work</a></li>
-                        <li><a href="https://bulma.io">Contact Me</a></li>
-                    </ul>
-                </div>
+                        <div class="tabs titles">
+                            <ul>
+                                <li><a href="https://bulma.io">About Me</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="https://bulma.io">Get In Touch</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
             </section>
-
+            
         </div>
 
     );
